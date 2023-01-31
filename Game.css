@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+body{
+    background-image: url('https://www.hitbullseye.com/images/school.svg');
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  body{
+    display: flex;
+    padding: 0 10px;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+  }
+  .Box{
+    width: 450px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  }
+  .Box h1{
+    font-size: 25px;
+    font-weight: 500;
+    padding: 20px 25px;
+    border-bottom: 1px solid #ccc;
+  }
+  .Box .content{
+    margin: 25px 25px 35px;
+  }
+  .content .inputs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .inputs input{
+    height: 60px;
+    width: 50px;
+    margin: 4px;
+    font-size: 24px;
+    font-weight: 400;
+    color: rgb(37, 128, 37);
+    text-align: center;
+    border-radius: 5px;
+    background: none;
+    pointer-events: none;
+    text-transform: uppercase;
+    border: 1px solid #B5B5B5;
+  }
+  .take-input {
+    opacity: 0;
+    z-index: -999;
+    position: absolute;
+    pointer-events: none;
+  }
+  .inputs input:first-child{
+    margin-left: 0px;
+  }
+  .content .details{
+    margin: 20px 0 25px;
+  }
+  .details p{
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .content .reset-button{
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: white;
+    outline: none;
+    padding: 15px 0;
+    font-size: 17px;
+    border-radius: 5px;
+    background:rgb(51, 206, 51);
+    transition: all 0.5s ease;
+  }
+  .content .reset-button:hover{
+    background:darkgreen;
+  }
+  @media screen and (max-width: 480px) {
+    .Box {
+      width: 100%;
+    }
+    .Box h1{
+      font-size: 64px;
+      padding: 16px 20px;
+    }
+    .Box .content{
+      margin: 25px 20px 35px;
+    }
+    .inputs input{
+      height: 54px;
+      width: 50px;
+      margin: 3px;
+      font-size: 22px;
+    }
+    .details p{
+      font-size: 20px;
+    }
+    .content .reset-button{
+      padding: 14px 0;
+      font-size: 16px;
+    }
+}
